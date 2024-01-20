@@ -1,9 +1,20 @@
-
+"use client"
+import { React, useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { MdDarkMode } from "react-icons/md";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaLinkedin,FaYoutube } from "react-icons/fa";
 import image from "next/image";
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+         duration: 800,
+         once: false,
+       })
+ }, [])
+  
+  
   return (
 <main className=" bg-white px-5">
   <section className="min-h-screen">
@@ -25,12 +36,12 @@ With a strong foundation in computer science, I am currently honing my skills an
  specializing in Front-End Development.
 </p>
 </div>
-<div className="text-4xl flex justify-center gap-10">
+<div className="text-4xl flex justify-center gap-10" data-aos="fade-up" >
 <FaSquareXTwitter />
 <FaLinkedin />
 <FaYoutube />
 </div>
-<img src="/images/imagelogo.jpg" alt="logo" className="flex justify-center rounded-full w-80 h-80 mt-10 mx-auto" />
+<img src="/images/imagelogo.jpg" alt="logo" className="flex justify-center rounded-full w-80 h-80 mt-10 mx-auto"/>
   </section>
 </main>
    
