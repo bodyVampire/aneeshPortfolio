@@ -1,4 +1,25 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  
+    basePath: 'portfolio',
+    
 
-module.exports = nextConfig
+     assetPrefix: 'portfolio',
+  
+    async headers() {
+      return [
+        {
+          source: '/(.*)',
+          headers: [
+            {
+              key: 'X-Frame-Options',
+              value: 'DENY',
+            },
+          ],
+        },
+      ]
+    },
+  }
+  
+  module.exports = nextConfig;
+  
