@@ -75,7 +75,7 @@ With a strong foundation in computer science, I am currently honing my skills an
 </div>
 <div className="logo-section bg-black p-4 rounded-sm mt-6 md:ml-32 ">
   <p className="text-white w-62 p-4 md:w-56 h-56" data-aos="zoom-in" data-aos-duration="2000">
-"Passionate frontend developer proficient in HTML, CSS, and JavaScript, with expertise in React and Next.js. Transforming ideas into interactive and engaging web experiences."</p>
+Passionate frontend developer proficient in HTML, CSS, and JavaScript, with expertise in React and Next.js. Transforming ideas into interactive and engaging web experiences.</p>
 </div>
 
 
